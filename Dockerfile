@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir opencv-python-headless
 
 # Копируем ваш скрипт в контейнер
 WORKDIR /app
-COPY detect_faces.py .
+COPY main.py .
 
 # Указываем точку входа для выполнения скрипта
-ENTRYPOINT ["python", "detect_faces.py"]
+ENTRYPOINT ["python", "main.py"]
